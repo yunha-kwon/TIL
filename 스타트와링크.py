@@ -12,7 +12,6 @@ def dfs(n, a_lst, b_lst):
         if len(a_lst) == len(b_lst):
             ans = min(ans, calc(a_lst, b_lst))
         return
-
     dfs(n+1, a_lst+[n], b_lst)
     dfs(n+1, a_lst, b_lst+[n])
 
